@@ -1,0 +1,40 @@
+﻿@model AdmissionPortal.Models.AdminLogin
+@{
+    ViewBag.Title = "AdminLogin";
+}
+
+
+
+
+
+
+<div class="d-flex justify-content-center">
+    <div class="card mt-5 shadow-sm" style="width: 500px;">
+        <div class="card-body">
+            <div class="pt-4 pb-2">
+                <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
+                <p class="text-center small">Enter your username &amp; password to login</p>
+            </div>
+
+            @using (Html.BeginForm("AdminLogin", "Home", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    @Html.TextBoxFor(model => model.Username, new { @class = "form-control", placeholder = "Enter username", id = "username" })
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    @Html.PasswordFor(model => model.Password, new { @class = "form-control", placeholder = "Enter password", id = "password" })
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

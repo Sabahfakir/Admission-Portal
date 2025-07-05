@@ -1,0 +1,249 @@
+﻿
+@model List<AdmissionPortal.Models.TotalAvailableSeats>
+@{
+    ViewBag.Title = "Courses";
+    
+}
+<style>
+    .table-section {
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+    }
+
+    .header-ug {
+        background-color: #198754;
+        color: white;
+        padding: 1rem;
+        font-weight: bold;
+    }
+
+    .header-pg {
+        background-color: #ffc107;
+        color: black;
+        padding: 1rem;
+        font-weight: bold;
+    }
+
+    .table thead {
+        background-color: #f8f9fa;
+    }
+
+    .section-divider {
+        background-color: #dee2e6;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .table td, .table th {
+        vertical-align: middle;
+    }
+
+    .btn {
+    }
+</style>
+
+<div class="container-fluid p-4 ">
+    <div class="row g-4 ">
+
+        <!-- UG Section -->
+        <div class="col-md-6">
+            <div class="table-section border">
+                <div class="header-ug">
+                    Undergraduate (UG) Admission Schedule
+                </div>
+                <table class="table table-bordered mb-0 bg-white">
+                    <thead>
+                        <tr>
+                            <th>Sr.No.</th>
+                            <th>Title</th>
+                            <th>Important Dates</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Filling up of College Profile<br><small>(Details of College, Officers, Bank, Courses, Subjects, Seats)</small></td><td>29.05.2025 to 01.06.2025</td></tr>
+                        <tr><td>2</td><td>Online Registration of Applicants</td><td>03.06.2025 to 30.06.2025</td></tr>
+                        <tr><td>3</td><td>Editing of Application Form (OTP based)</td><td>03.06.2025 to 01.07.2025</td></tr>
+                        <tr><td>4</td><td>Online Document Verification by Colleges</td><td>05.06.2025 to 02.07.2025</td></tr>
+
+                        <tr class="section-divider"><td colspan="3">1<sup>st</sup> Round of Counselling</td></tr>
+                        <tr><td>5</td><td>Display of 1<sup>st</sup> Merit List (Provisional)</td><td>04.07.2025</td></tr>
+                        <tr><td>6</td><td>Display of 1<sup>st</sup> Merit List (Final)</td><td>05.07.2025</td></tr>
+                        <tr><td>7</td><td>Fee Submission for 1<sup>st</sup> Round</td><td>05.07.2025 to 10.07.2025</td></tr>
+
+                        <tr class="section-divider"><td colspan="3">2<sup>nd</sup> Round of Counselling</td></tr>
+                        <tr><td>8</td><td>2<sup>nd</sup> Merit List (Provisional)</td><td>11.07.2025</td></tr>
+                        <tr><td>9</td><td>2<sup>nd</sup> Merit List (Final)</td><td>12.07.2025</td></tr>
+                        <tr><td>10</td><td>Fee Submission for 2<sup>nd</sup> Round</td><td>12.07.2025 to 15.07.2025</td></tr>
+
+                        <tr class="section-divider"><td colspan="3">3<sup>rd</sup> Round of Counselling</td></tr>
+                        <tr><td>11</td><td>Physical Counselling for leftover seats</td><td>17.07.2025</td></tr>
+                        <tr><td>12</td><td>Reopening of Portal for Fresh Registration</td><td>17.07.2025 to 30.07.2025</td></tr>
+                        <tr><td>13</td><td>Physical Counselling (Late Fee Rs. 100)</td><td>18.07.2025 to 24.07.2025</td></tr>
+                        <tr><td>14</td><td>Physical Counselling (Late Fee Rs. 100 + Rs. 100/Day)</td><td>25.07.2025 to 30.07.2025</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- PG Section -->
+        <div class="col-md-6">
+            <div class="table-section border">
+                <div class="header-pg">
+                    Postgraduate (PG) Admission Schedule
+                </div>
+                <table class="table table-bordered mb-0 bg-white">
+                    <thead>
+                        <tr>
+                            <th>Sr.No.</th>
+                            <th>Title</th>
+                            <th>Important Dates</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Filling up of College Profile</td><td>09.07.2025 to 11.07.2025</td></tr>
+                        <tr><td>2</td><td>Online Registration of Applicants</td><td>12.07.2025 to 30.07.2025</td></tr>
+                        <tr><td>3</td><td>Editing of Application Form (OTP based)</td><td>12.07.2025 to 30.07.2025</td></tr>
+                        <tr><td>4</td><td>Online Document Verification by Colleges</td><td>15.07.2025 to 31.07.2025</td></tr>
+
+                        <tr class="section-divider"><td colspan="3">1<sup>st</sup> Round of Counselling</td></tr>
+                        <tr><td>5</td><td>Display of Merit List (Provisional)</td><td>01.08.2025</td></tr>
+                        <tr><td>6</td><td>Display of Merit List (Final)</td><td>02.08.2025</td></tr>
+                        <tr><td>7</td><td>Fee Submission for 1<sup>st</sup> Round</td><td>02.08.2025 to 06.08.2025</td></tr>
+
+                        <tr class="section-divider"><td colspan="3">2<sup>nd</sup> Round of Counselling</td></tr>
+                        <tr><td>8</td><td>Physical Counselling from Merit List</td><td>08.08.2025</td></tr>
+                        <tr><td>9</td><td>Reopening of Portal for Registration</td><td>08.08.2025 (Evening)</td></tr>
+                        <tr><td>10</td><td>Physical Counselling (Late Fee Rs. 100)</td><td>09.08.2025 to 16.08.2025</td></tr>
+                        <tr><td>11</td><td>Physical Counselling (Late Fee Rs. 100 + Rs. 100/Day)</td><td>17.08.2025 to 24.08.2025</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
+                <h1 class="mb-5">Courses</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                @foreach (var course in Model)
+                {
+                    <div class="col-lg-3 col-md-6">
+                        <div class="course-item bg-light border border-primary">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="~/Template/img/@(course.CourseName.ToLower()).jpg" alt="@course.CourseName" style="height: 300px; width: 100%;">
+                                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                    <div class="bg-light p-3 rounded shadow">
+                                        <strong>Remaining Seats: @course.RemainingSeats</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center p-4">
+                                <h3 class="mb-0">@course.CourseName</h3>
+                            </div>
+                        </div>
+                    </div>
+                }
+                @*<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item bg-light border border-primary">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid" src="~/Template/img/bba.jpg" alt="" style="height: 300px;  width: 100%;">
+                    <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+
+                        <div class="bg-light p-3 rounded shadow">
+                            <strong>@course.CourseName: Remaining Seats - @course.RemainingSeats</strong>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="text-center p-4 ">
+                    <h3 class="mb-0">@course.CourseName</h3>
+
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item bg-light border border-primary">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid" src="~/Template/img/bca.jpg" alt="" style="height: 300px; width: 100%;">
+                    <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+
+                        <div class="bg-light p-3 rounded shadow">
+                            <strong>@course.CourseName: Remaining Seats - @course.RemainingSeats</strong>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="text-center p-4 ">
+                    <h3 class="mb-0">BCA</h3>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item bg-light border border-primary">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid" src="~/Template/img/mba.jpg" alt="" style="height: 300px; width: 100%;">
+                    <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                        <div class="bg-light p-3 rounded shadow">
+                            <strong>@course.CourseName: Remaining Seats - @course.RemainingSeats</strong>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="text-center p-4 ">
+                    <h3 class="mb-0">MBA</h3>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="course-item bg-light border border-primary">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid" src="~/Template/img/mca.jpg" alt="" style="height: 300px; width: 100%;">
+                    <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+
+                        <div class="bg-light p-3 rounded shadow">
+                            <strong>@course.CourseName: Remaining Seats - @course.RemainingSeats</strong>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="text-center p-4 ">
+                    <h3 class="mb-0">MCA</h3>
+
+                </div>
+
+            </div>
+        </div>*@
+           
+                
+                    @Html.ActionLink("Apply Now", "StudentDetail", "Home", new { @class = "flex-shrink-0 btn btn-sm btn-primary px-3" })
+             
+                
+                    @Html.ActionLink("Merit List", "GenerateMeritList", "Home", null, new { @class = "btn btn-success" })
+             
+           
+            </div>
+        </div>
+    </div>
+
+    <!-- Courses End -->

@@ -1,0 +1,48 @@
+﻿
+@model List<AdmissionPortal.Models.CourseSeats>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="container p-2 m-4">
+<h2>Caste Category Wise Student Records</h2>
+
+
+@foreach (var group in Model)
+{
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h4>@group.Category</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var student in group.Students)
+                    {
+                        <tr>
+                            <td>@student.Name</td>
+                            <td>@student.Course</td>
+                            <td>@student.Email</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+}
+    </div>
+
+
+

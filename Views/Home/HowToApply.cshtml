@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = "HowToApply";
+}
+
+<style>
+    .step-card {
+        border-left: 6px solid #0d6efd;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background-color: #f8f9fa;
+    }
+
+    .step-icon {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .step-header {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .badge-role {
+        font-size: 0.75rem;
+        margin-left: auto;
+    }
+
+    .step-number {
+        font-weight: bold;
+        color: #0d6efd;
+    }
+    
+</style>
+
+
+    <div class="container p-4">
+        <h4 class="bg-primary text-white p-3 rounded">Online Admission Process</h4>
+
+        <!-- Step 1 -->
+        <div class="step-card">
+            <div class="step-header">
+                <span class="step-icon">🔵</span>
+                <span class="step-number">Step 1 - Online Registration</span>
+                <span class="badge bg-info text-dark badge-role">Candidate</span>
+            </div>
+            <ul class="mt-2">
+                <li>UserID Password based Registration</li>
+            </ul>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+            <div class="step-header">
+                <span class="step-icon">🟡</span>
+                <span class="step-number">Step 2 - Application Form</span>
+                <span class="badge bg-info text-dark badge-role">Candidate</span>
+            </div>
+            <ul class="mt-2">
+                <li>Filling up of Personal Details, Education Details, weightage, Document Upload, College and Course Preferences.</li>
+            </ul>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+            <div class="step-header">
+                <span class="step-icon">✅</span>
+                <span class="step-number">Step 3 - Online Verification</span>
+                <span class="badge bg-warning text-dark badge-role">College</span>
+            </div>
+            <ul class="mt-2">
+                <li>Application Form of the Candidate allocated to the Colleges on the basis of First Preference filled by the candidate.</li>
+                <li>College verify the application form and documents of the candidates.</li>
+                <li>SMS/Email alert sent to the candidates if Objection is raised. In that case, applicant need to remove the objection and submit the form again.</li>
+            </ul>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+            <div class="step-header">
+                <span class="step-icon">📋</span>
+                <span class="step-number">Step 4 - Merit List & Seat Allocation</span>
+                <span class="badge bg-success badge-role">System</span>
+            </div>
+            <ul class="mt-2">
+                <li>Rank generation on the basis of Qualification Marks + Weightage.</li>
+                <li>Merit List generated as per Ranking and in consideration with Reservation Policy.</li>
+            </ul>
+        </div>
+
+
+
+        <!-- Step 6 -->
+        <div class="step-card">
+            <div class="step-header">
+                <span class="step-icon">✅</span>
+                <span class="step-number">Step 5 - Admission Confirmation</span>
+                <span class="badge bg-info text-dark badge-role">Candidate</span>
+            </div>
+            <ul class="mt-2">
+                <li>After Payment, download the Fee Receipt from the portal and your admission gets confirmed.</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+

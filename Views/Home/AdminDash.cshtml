@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "AdminDash";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container p-5">
+    <div class="row">
+        <h1 class="text-center">Admin Dashboard</h1>
+        <div class="col-lg-6">
+            <div class="border border-primary shadow-lg text-center p-4 bg-white">
+                <a href="/Student/Index" class="btn">Student Details</a>
+                <div class="alert alert-info">
+                    <strong>@ViewBag.TotalStudents</strong> students have been applied.
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="border border-primary shadow-lg text-center p-4 bg-white">
+                <a href="/StudRegistration/Index" class="btn">Student Registration Details</a>
+                <div class="alert alert-info">
+                    <strong>@ViewBag.TotalRegistrations</strong> students have been registered.
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mt-4">
+            <div class="border border-primary shadow-lg text-center p-4 bg-white">
+                <a href="/Course/Index" class="btn">Caste Wise Records</a>
+            </div>
+        </div>
+        <div class="col-lg-6 mt-4">
+            <div class="border border-primary shadow-lg text-center p-4 bg-white">
+                <a href="/Admin/Index" class="btn">Admin Details</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
